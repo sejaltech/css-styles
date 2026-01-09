@@ -1,0 +1,69 @@
+
+<html>
+<head>
+    <title>CSS Box Model – Detailed Practice</title>
+</head>
+<style>
+    body {
+            font-family: Arial, sans-serif;
+        }
+
+        .box {
+            width: 250px;
+        }
+
+        .box1 {
+            background-color: rgb(37, 168, 211);
+            padding: 40px;
+            border: 2px solid rgb(11, 11, 35);
+            margin: 20px;
+        }
+
+        .box2 {
+            background-color: rgb(221, 64, 88);
+            padding: 40px;
+            border: 4px dashed rgb(163, 14, 14);
+            margin: 30px;
+        }
+
+        .box3 {
+            background-color: rgb(74, 23, 194);
+            padding: 10px 40px;
+            border: 5px dotted green;
+            margin: 10px 50px;
+        }
+    </style>
+</style>
+<body>
+
+    <h1>CSS Box Model – Visual Practice</h1>
+    <p>
+        Each box below shows how <strong>content, padding, border, and margin</strong>
+        affect layout. Open DevTools (Right-click → Inspect) to see the box model diagram.
+    </p>
+
+    <div>BOX 1: padding: 20px | border: 2px | margin: 20px</div>
+    <div class="box box1">
+        CONTENT AREA<br>
+        (Text lives here)
+    </div>
+
+    <div>BOX 2: padding: 40px | border: 4px | margin: 30px</div>
+    <div class="box box2">
+        Larger padding pushes content inward
+    </div>
+
+    <div>BOX 3: different padding & margins</div>
+    <div class="box box3">
+        Left & right padding is bigger than top & bottom
+    </div>
+    <hr>
+    <h2>Key Takeaways</h2>
+    <ul>
+        <li><strong>Padding</strong> increases space inside the box</li>
+        <li><strong>Border</strong> surrounds content + padding</li>
+        <li><strong>Margin</strong> controls spacing between elements</li>
+        <li>Total size = content + padding + border (margin is outside)</li>
+    </ul>
+</body>
+</html>
